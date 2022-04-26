@@ -42,9 +42,9 @@ def MTRC_out():
 
 def MTRC_idle():
 	GPIO.output(motor1a,GPIO.LOW)
-    GPIO.output(motor1b,GPIO.LOW)
-    GPIO.output(motor1e,GPIO.LOW)
-    GPIO.output(motor2a,GPIO.LOW)
+    	GPIO.output(motor1b,GPIO.LOW)
+    	GPIO.output(motor1e,GPIO.LOW)
+    	GPIO.output(motor2a,GPIO.LOW)
 	GPIO.output(motor2b,GPIO.LOW)
 	GPIO.output(motor2e,GPIO.LOW)
 
@@ -61,10 +61,10 @@ def KeyArmed(key_type):
 			wKey = True
 			print('[MTRC] Activating forward roll.')
 			GPIO.output(motor1a,GPIO.HIGH)
-            GPIO.output(motor1b,GPIO.LOW)
-            GPIO.output(motor1e,GPIO.HIGH)
-            GPIO.output(motor2a,GPIO.LOW)
-            GPIO.output(motor2b,GPIO.HIGH)
+            		GPIO.output(motor1b,GPIO.LOW)
+            		GPIO.output(motor1e,GPIO.HIGH)
+            		GPIO.output(motor2a,GPIO.LOW)
+            		GPIO.output(motor2b,GPIO.HIGH)
   			GPIO.output(motor2e,GPIO.HIGH)
 
 		#
@@ -73,9 +73,9 @@ def KeyArmed(key_type):
 			aKey = True
 			print('[MTRC] Activating left roll.')
 			GPIO.output(motor1a,GPIO.HIGH)
-            GPIO.output(motor1b,GPIO.LOW)
-            GPIO.output(motor1e,GPIO.HIGH)
-            GPIO.output(motor2a,GPIO.HIGH)
+            		GPIO.output(motor1b,GPIO.LOW)
+            		GPIO.output(motor1e,GPIO.HIGH)
+            		GPIO.output(motor2a,GPIO.HIGH)
 			GPIO.output(motor2b,GPIO.LOW)
 			GPIO.output(motor2e,GPIO.HIGH)
 
@@ -85,9 +85,9 @@ def KeyArmed(key_type):
 			sKey = True
 			print('[MTRC] Activating reverse roll.')
 			GPIO.output(motor1a,GPIO.LOW)
-            GPIO.output(motor1b,GPIO.HIGH)
-            GPIO.output(motor1e,GPIO.HIGH)
-            GPIO.output(motor2a,GPIO.HIGH)
+            		GPIO.output(motor1b,GPIO.HIGH)
+            		GPIO.output(motor1e,GPIO.HIGH)
+            		GPIO.output(motor2a,GPIO.HIGH)
 			GPIO.output(motor2b,GPIO.LOW)
 			GPIO.output(motor2e,GPIO.HIGH)
 
@@ -97,9 +97,9 @@ def KeyArmed(key_type):
 			dKey = True
 			print('[MTRC] Activating right roll.')
 			GPIO.output(motor1a,GPIO.LOW)
-            GPIO.output(motor1b,GPIO.HIGH)
-            GPIO.output(motor1e,GPIO.HIGH)
-            GPIO.output(motor2a,GPIO.LOW)
+            		GPIO.output(motor1b,GPIO.HIGH)
+            		GPIO.output(motor1e,GPIO.HIGH)
+            		GPIO.output(motor2a,GPIO.LOW)
 			GPIO.output(motor2b,GPIO.HIGH)
 			GPIO.output(motor2e,GPIO.HIGH)
 
